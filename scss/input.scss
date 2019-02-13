@@ -1,7 +1,7 @@
 @import "_mixins";
 
 
-
+$tweak: none;
 .nav1,
 .nav2 {
   display: flex;
@@ -29,11 +29,47 @@
   justify-content: space-between;
 }
 
-.subcontent {
-  @include grid(4, 5%)
+
+.subcontent{
+    img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    border: solid 2px black;
+    &:hover{
+      border-color: transparentize(red, .5)
+    }
+    // &:hover{
+    //   display: $tweak;
+    // }
+  }
 }
-.subcontent>img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 5%;
+.logo>img{
+  border-radius: 100%;
 }
+.side-buttons>button{
+  border-radius: 30%;
+}
+
+@media screen and (min-width: 1441px) {
+  .subcontent {
+    @include grid(4, 5%);
+  }
+};
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .subcontent {
+    @include grid(3, 5%);
+  }
+};
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .subcontent {
+    @include grid(2, 5%);
+  }
+};
+
+@media screen and (max-width: 425px) {
+  .subcontent {
+    @include grid(1, 5%);
+  }
+};

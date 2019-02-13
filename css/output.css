@@ -24,20 +24,67 @@
   justify-content: space-between;
 }
 
-.subcontent {
-  float: left;
-  width: 21.25%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-}
-.subcontent:nth-child(4n) {
-  margin-right: 0;
-}
-
-.subcontent > img {
+.subcontent img {
   width: 100%;
   height: auto;
   margin-bottom: 5%;
+  border: solid 2px black;
+}
+.subcontent img:hover {
+  border-color: rgba(255, 0, 0, 0.5);
+}
+
+.logo > img {
+  border-radius: 100%;
+}
+
+.side-buttons > button {
+  border-radius: 30%;
+}
+
+@media screen and (min-width: 1441px) {
+  .subcontent {
+    float: left;
+    width: 21.25%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+  .subcontent:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .subcontent {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+  .subcontent:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .subcontent {
+    float: left;
+    width: 47.5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+  .subcontent:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .subcontent {
+    float: left;
+    width: 100%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+  .subcontent:nth-child(1n) {
+    margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
