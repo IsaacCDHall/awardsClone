@@ -23,7 +23,6 @@
 }
 
 .location,
-
 .button-content {
   display: flex;
   flex-direction: row;
@@ -32,4 +31,9 @@
 
 .subcontent {
   @include grid(4, 5%)
+}
+.subcontent>img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5%;
 }
