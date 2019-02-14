@@ -1,12 +1,26 @@
+html {
+  background-color: rgba(0, 200, 200, 0.03);
+}
+
 .nav1,
 .nav2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.nav1 {
+  max-height: 70px;
 }
 
 .nav1-content {
   display: inline-flex;
+}
+
+.nav1-content img {
+  width: 200px;
+  height: auto;
 }
 
 .content {
